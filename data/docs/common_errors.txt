@@ -1,0 +1,41 @@
+Common Test Errors
+
+Error: Connection timeout
+Meaning:
+This often indicates that the target service is unavailable, too slow, or blocked by a network issue.
+
+Suggested checks:
+1. Verify service health.
+2. Check network connectivity.
+3. Confirm whether the environment is under maintenance.
+4. Review timeout configuration.
+
+Error: Authentication failed
+Meaning:
+This usually means that credentials are missing, expired, invalid, or not properly configured.
+
+Suggested checks:
+1. Verify account and password.
+2. Check token expiration.
+3. Confirm environment-specific credentials.
+4. Review authentication logs.
+
+Error: HTTP 500 Internal Server Error
+Meaning:
+This may indicate a backend service failure or an unhandled exception in the application.
+
+Suggested checks:
+1. Review backend logs.
+2. Check recent deployments.
+3. Compare with known issues.
+4. Determine whether the issue is reproducible.
+
+Error: Test data not found
+Meaning:
+The test depends on data that was not created, was deleted, or is not available in the current environment.
+
+Suggested checks:
+1. Verify data setup steps.
+2. Check database or API seed scripts.
+3. Confirm environment alignment.
+4. Rebuild test data if necessary.

@@ -1,0 +1,16 @@
+Engineering and Testing FAQ
+
+Q: What should I do first when an automated test fails?
+A: First review the failure log and determine whether the issue is caused by the environment, test data, test code, or product code.
+
+Q: When is it reasonable to rerun a failed test?
+A: A rerun is reasonable when there is evidence that the failure was caused by unstable environment conditions, temporary connectivity issues, or flaky infrastructure.
+
+Q: When should I create a defect ticket?
+A: A defect ticket should be created when the failure appears reproducible and is likely caused by product logic or backend service behavior.
+
+Q: Why is it important to compare failures with known issues?
+A: Comparing failures with known issues can reduce investigation time and help engineers identify common patterns faster.
+
+Q: What is the value of a knowledge-based assistant for engineering teams?
+A: A knowledge-based assistant can reduce the time spent searching documentation, improve consistency of answers, and help engineers find relevant guidance faster.

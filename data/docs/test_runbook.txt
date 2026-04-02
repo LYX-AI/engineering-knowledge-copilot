@@ -1,0 +1,22 @@
+Test Execution Runbook
+
+This document describes the basic process for running automated tests and handling failures.
+
+1. Before running tests, verify that the target environment is available.
+2. Confirm that all required services are healthy.
+3. Check whether test data has been properly prepared.
+4. Start the test suite and monitor for timeout, connection, or authentication errors.
+5. If a failure happens, first determine whether it is caused by:
+   - environment instability
+   - test data issues
+   - service dependency failure
+   - product code defect
+   - test script issue
+
+When a test fails, engineers should first review the logs and compare the error against known issues and previous incidents.
+
+If the failure is caused by environment instability, re-running the test may be appropriate.
+If the failure is caused by a product defect, a defect ticket should be created.
+If the failure is caused by test data problems, the data preparation process should be checked and corrected.
+
+The goal of failure analysis is to identify the most likely root cause before escalating the issue.

@@ -1,0 +1,92 @@
+[
+  {
+    "source": "common_errors.txt",
+    "chunk_id": "common_errors_0",
+    "text": "Common Test Errors\n\nError: Connection timeout\nMeaning:\nThis often indicates that the target service is unavailable, too slow, or blocked by a network issue.\n\nSuggested checks:\n1. Verify service health.\n2. Check network connectivity.\n3. Confirm whether the environment is under maintenance.\n4. Review ",
+    "length": 300
+  },
+  {
+    "source": "common_errors.txt",
+    "chunk_id": "common_errors_1",
+    "text": "r the environment is under maintenance.\n4. Review timeout configuration.\n\nError: Authentication failed\nMeaning:\nThis usually means that credentials are missing, expired, invalid, or not properly configured.\n\nSuggested checks:\n1. Verify account and password.\n2. Check token expiration.\n3. Confirm envi",
+    "length": 300
+  },
+  {
+    "source": "common_errors.txt",
+    "chunk_id": "common_errors_2",
+    "text": "ssword.\n2. Check token expiration.\n3. Confirm environment-specific credentials.\n4. Review authentication logs.\n\nError: HTTP 500 Internal Server Error\nMeaning:\nThis may indicate a backend service failure or an unhandled exception in the application.\n\nSuggested checks:\n1. Review backend logs.\n2. Check",
+    "length": 300
+  },
+  {
+    "source": "common_errors.txt",
+    "chunk_id": "common_errors_3",
+    "text": "Suggested checks:\n1. Review backend logs.\n2. Check recent deployments.\n3. Compare with known issues.\n4. Determine whether the issue is reproducible.\n\nError: Test data not found\nMeaning:\nThe test depends on data that was not created, was deleted, or is not available in the current environment.\n\nSugge",
+    "length": 300
+  },
+  {
+    "source": "common_errors.txt",
+    "chunk_id": "common_errors_4",
+    "text": "s not available in the current environment.\n\nSuggested checks:\n1. Verify data setup steps.\n2. Check database or API seed scripts.\n3. Confirm environment alignment.\n4. Rebuild test data if necessary.\n",
+    "length": 199
+  },
+  {
+    "source": "faq.txt",
+    "chunk_id": "faq_0",
+    "text": "Engineering and Testing FAQ\n\nQ: What should I do first when an automated test fails?\nA: First review the failure log and determine whether the issue is caused by the environment, test data, test code, or product code.\n\nQ: When is it reasonable to rerun a failed test?\nA: A rerun is reasonable when th",
+    "length": 300
+  },
+  {
+    "source": "faq.txt",
+    "chunk_id": "faq_1",
+    "text": "un a failed test?\nA: A rerun is reasonable when there is evidence that the failure was caused by unstable environment conditions, temporary connectivity issues, or flaky infrastructure.\n\nQ: When should I create a defect ticket?\nA: A defect ticket should be created when the failure appears reproducib",
+    "length": 300
+  },
+  {
+    "source": "faq.txt",
+    "chunk_id": "faq_2",
+    "text": "uld be created when the failure appears reproducible and is likely caused by product logic or backend service behavior.\n\nQ: Why is it important to compare failures with known issues?\nA: Comparing failures with known issues can reduce investigation time and help engineers identify common patterns fas",
+    "length": 300
+  },
+  {
+    "source": "faq.txt",
+    "chunk_id": "faq_3",
+    "text": "me and help engineers identify common patterns faster.\n\nQ: What is the value of a knowledge-based assistant for engineering teams?\nA: A knowledge-based assistant can reduce the time spent searching documentation, improve consistency of answers, and help engineers find relevant guidance faster.\n",
+    "length": 295
+  },
+  {
+    "source": "faq.txt",
+    "chunk_id": "faq_4",
+    "text": "elp engineers find relevant guidance faster.\n",
+    "length": 45
+  },
+  {
+    "source": "test_runbook.txt",
+    "chunk_id": "test_runbook_0",
+    "text": "Test Execution Runbook\n\nThis document describes the basic process for running automated tests and handling failures.\n\n1. Before running tests, verify that the target environment is available.\n2. Confirm that all required services are healthy.\n3. Check whether test data has been properly prepared.\n4.",
+    "length": 300
+  },
+  {
+    "source": "test_runbook.txt",
+    "chunk_id": "test_runbook_1",
+    "text": "k whether test data has been properly prepared.\n4. Start the test suite and monitor for timeout, connection, or authentication errors.\n5. If a failure happens, first determine whether it is caused by:\n   - environment instability\n   - test data issues\n   - service dependency failure\n   - product cod",
+    "length": 300
+  },
+  {
+    "source": "test_runbook.txt",
+    "chunk_id": "test_runbook_2",
+    "text": "s\n   - service dependency failure\n   - product code defect\n   - test script issue\n\nWhen a test fails, engineers should first review the logs and compare the error against known issues and previous incidents.\n\nIf the failure is caused by environment instability, re-running the test may be appropriate",
+    "length": 300
+  },
+  {
+    "source": "test_runbook.txt",
+    "chunk_id": "test_runbook_3",
+    "text": "nstability, re-running the test may be appropriate.\nIf the failure is caused by a product defect, a defect ticket should be created.\nIf the failure is caused by test data problems, the data preparation process should be checked and corrected.\n\nThe goal of failure analysis is to identify the most lik",
+    "length": 300
+  },
+  {
+    "source": "test_runbook.txt",
+    "chunk_id": "test_runbook_4",
+    "text": "al of failure analysis is to identify the most likely root cause before escalating the issue.\n",
+    "length": 94
+  }
+]
